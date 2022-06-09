@@ -1,0 +1,21 @@
+: lures get-url 0
+
+https://www.sussite465.me/fEuXEhtD
+
+: phishlets enable reddit
+[02:32:55] [inf] enabled phishlet 'reddit'
+[02:32:55] [inf] setting up certificates for phishlet 'reddit'...
+[02:32:55] [war] failed to load certificate files for phishlet 'reddit', domain 'sussite465.me': open /root/.evilginx/crt/sussite465.me/reddit.crt: no such file or directory
+[02:32:55] [inf] requesting SSL/TLS certificates from LetsEncrypt...
+[02:33:05] [!!!] acme: Error -> One or more domains had a problem:
+[events.sussite465.me] acme: error: 400 :: urn:ietf:params:acme:error:dns :: DNS problem: NXDOMAIN looking up A for events.sussite465.me - check that a DNS record exists for this domain; DNS problem: NXDOMAIN looking up AAAA for events.sussite465.me - check that a DNS record exists for this domain, url:
+[win.sussite465.me] acme: error: 400 :: urn:ietf:params:acme:error:dns :: DNS problem: NXDOMAIN looking up A for win.sussite465.me - check that a DNS record exists for this domain; DNS problem: NXDOMAIN looking up AAAA for win.sussite465.me - check that a DNS record exists for this domain, url:
+[www.sussite465.me] acme: error: 400 :: urn:ietf:params:acme:error:dns :: DNS problem: NXDOMAIN looking up A for www.sussite465.me - check that a DNS record exists for this domain; DNS problem: NXDOMAIN looking up AAAA for www.sussite465.me - check that a DNS record exists for this domain, url:
+
+[02:33:05] [inf] disabled phishlet 'reddit'
+: phishlets get-hosts reddit
+
+159.65.227.162 www.sussite465.me
+159.65.227.162 win.sussite465.me
+159.65.227.162 events.sussite465.me
+
